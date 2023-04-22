@@ -1,5 +1,4 @@
 import React from "react";
-import Slides from "../helpers/getFotos";
 import { useState, useEffect } from "react";
 
 export const Slideshow = ({ Slides }) => {
@@ -8,7 +7,7 @@ export const Slideshow = ({ Slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index + 1) % Slides.length);
-    }, 10000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [index, Slides.length]);
 
