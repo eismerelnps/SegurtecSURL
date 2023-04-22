@@ -17,13 +17,10 @@ export const SegurTecApp = () => {
     <div>
       < Topnav />
     </div>
-    <div >
+    <div className='row' >
       < Body />
-    </div>
-
-    <aside >
       < Aside />
-    </aside>
+    </div>
 
     <footer>
       < Footer />

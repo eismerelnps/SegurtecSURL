@@ -1,4 +1,6 @@
 import React from "react";
+import Slideshow from "./slideshow";
+import slides from "../helpers/getFotos";
 
 export const Aside = () => {
   return (
@@ -10,6 +12,7 @@ export const Aside = () => {
       </div>
       <div class="card">
         <h3>Últimos productos</h3>
+        < Slideshow Slides={slides} />
         <div class="fakeimg">
           <p>Image</p>
         </div>
