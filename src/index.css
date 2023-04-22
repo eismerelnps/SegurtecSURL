@@ -26,45 +26,98 @@ body {
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #111111;  
+  background-color: #111111;
+}
+.topnav nav {
+  float: right;
 }
 
 /* Style the topnav links */
 .topnav a {
   border: 1px solid #353839;
   border-radius: 7px;
+  color: #ff0800;
+  display: inline-block;
   margin: 10px;
-  padding: 10px;
-  float: right;
-  display: block;
-  color: #FF0800;
-  text-align: center;
   padding: 14px 16px;
+  text-align: center;
   text-decoration: none;
 }
 
 /* Change color on hover */
 .topnav a:hover {
-  border: 1px solid #FF0800;
+  border: 1px solid #ff0800;
   border-radius: 10px;
   transition: 500ms;
-  background-color: #414A4C;
-  color: #FF0800;
+  background-color: #414a4c;
+  color: #ff0800;
 }
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
-.body {  
- border: 7px solid #35383976;
- border-radius: 7px;
+.body {
+  border: 7px solid #35383976;
+  border-radius: 7px;
   float: left;
   width: 71%;
   margin: 1%;
 }
 
+.static-offer_top {
+  color: #111111;
+  display: block;
+}
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+.circle-h1 {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+.static-offer_middle {
+  display: flex;
+  justify-content: center;
+}
+.static-offer_middle__right, .static-offer_middle__left {
+  flex-basis: 50%;
+}
+
+
+.static-offer_bottom div {
+  display: inline-block;
+  margin: 5px;
+  overflow: auto;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+
+
 /* Right column */
 .aside {
-  border: 1px solid #FF0800;
+  border: 1px solid #ff0800;
   border-radius: 7px;
   float: left;
   width: 22%;
@@ -89,17 +142,25 @@ body {
 .card {
   text-align: center;
   background-color: f1f1f1;
-  border: 1px solid #414A4C;
+  border: 1px solid #414a4c;
   border-radius: 15px;
   padding: 20px;
   margin: 20px 20px;
 }
+.card1 {
+  text-align: center;
+  background-color: f1f1f1;
+  border: 1px solid #414a4c3a;
+  border-radius: 15px;
+  padding: 0;
+  margin: 0;
+}
 .card:hover {
-  background-color: #E5E4E2;
-  
+  background-color: #e5e4e2;
+
   transition: 500ms;
 }
-.card img {
+.card img, .card1 img {
   border-radius: 15px;
   max-width: 100%;
   height: auto;
@@ -120,21 +181,107 @@ body {
   margin-top: 20px;
 }
 .footer h2 {
-  color: #FF0800;
+  color: #ff0800;
 }
 
+
+
+
+
+
+
+/*Css for imageTextBlock component*/
+.image-text-block-container {
+  position: relative;
+  font-family: Arial;
+}
+
+.image-text-block {
+  width: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.616);
+  border-radius: 15px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*
+ .image-text-block {
+    width: 50%;
+    height: auto;
+    bottom: 5px;
+    right: 5px;
+    font-size: 5px;
+    padding-left: 5px;
+    padding-right: 5px;;
+  }*/
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .body, .aside {   
+  .body,
+  .aside {
     width: 100%;
     padding: 0;
   }
+ 
+    
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
+  .topnav {
+    padding: 25px;
+  }
   .topnav a {
     float: none;
     width: 100%;
+}
+  .static-offer_middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
+  .static-offer_middle__right, .static-offer_middle__left {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+.static-offer_middle {
+  display: flex;
+  align-items: center;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
 }

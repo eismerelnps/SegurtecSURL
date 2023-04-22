@@ -1,6 +1,6 @@
 const slides = [
     {
-      image: 'https://picsum.photos/500/300?random=1',
+      image: 'https://picsum.photos/700/450?random=1',
       caption: 'Slide 1',
     },
     {
