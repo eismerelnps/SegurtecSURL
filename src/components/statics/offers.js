@@ -1,5 +1,5 @@
 import React from "react";
-
+import Slides from "../../helpers/getPhotos";
 export const Offers = () => {
   return (
     <div className="static-offer">
@@ -28,19 +28,19 @@ export const Offers = () => {
 
       <div className="static-offer_bottom">
         <div>
-          <img src="https://picsum.photos/100?random=1" />
+          <img src={Slides[0].image} />
           <p>Cámaras de Seguridad</p>
         </div>
         <div>
-          <img src="https://picsum.photos/100?random=2" />
+          <img src={Slides[3].image}  />
           <p>Barreras perimetrales</p>
         </div>
         <div>
-          <img src="https://picsum.photos/100?random=3" />
+          <img src={Slides[2].image} />
           <p>Alarmas</p>
         </div>
         <div>
-          <img src="https://picsum.photos/100?random=4" />
+          <img src={Slides[1].image} />
           <p>Video Porteros</p>
         </div>
       </div>

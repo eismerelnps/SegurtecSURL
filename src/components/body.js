@@ -4,12 +4,13 @@ import { ImageTextBlock } from "./statics/imageTextBlock";
 
 
 export const Body = () => {
-  const img = './././public/connection.png'
+  const img = 'src/connection.png'
+  const img2 = 'https://picsum.photos/1500/700'
   return (
     <div className="body">
       <div className="card1">
        < ImageTextBlock 
-       url={ 'https://picsum.photos/1500/700' }
+       url={ img }
        title='SegurTec S.U.R.L'
        description='No dejes que la inseguridad te preocupe. Déjanos proteger lo que más te importa'
        />

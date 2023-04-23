@@ -1,15 +1,19 @@
 const slides = [
     {
-      image: 'https://picsum.photos/700/450?random=1',
+      image: require('../photos/camera-back.png'),
       caption: 'Slide 1',
     },
     {
-      image: 'https://picsum.photos/500/300?random=2',
+      image: require('../photos/dome.png'),
       caption: 'Slide 2',
     },
     {
-      image: 'https://picsum.photos/500/300?random=3',
+      image: require('../photos/gavin.png'),
       caption: 'Slide 3',
+    },
+    {
+      image: require('../photos/lacer.png'),
+      caption: 'Slide 4',
     },
   ];
 /*const getPhotos = async ( index ) => {
