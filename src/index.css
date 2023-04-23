@@ -134,7 +134,7 @@ body {
   border-radius: 7px;
   float: left;
   width: 22%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   margin: 1%;
   padding: 0;
 }
@@ -188,6 +188,8 @@ body {
 
 /* Footer */
 .footer {
+  border-top: 1px solid #ff0000;
+  border-top-right-radius: 50px;
   color: #ffffff;
   padding: 10px;
   text-align: center;

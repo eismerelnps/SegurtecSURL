@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb3c3ce3.css",
+    "main.css": "/static/css/main.448d84f2.css",
     "main.js": "/static/js/main.89ec31c4.js",
     "static/media/connection.png": "/static/media/connection.f240e9e6a0f6be43ee68.png",
     "static/media/camera-back.png": "/static/media/camera-back.5557eae55515246e906b.png",
@@ -9,11 +9,11 @@
     "static/media/card-segurtec.png": "/static/media/card-segurtec.0ce4706aa6b87b2ac671.png",
     "static/media/lacer.png": "/static/media/lacer.ff46d9d09aa3b5514e4c.png",
     "index.html": "/index.html",
-    "main.bb3c3ce3.css.map": "/static/css/main.bb3c3ce3.css.map",
+    "main.448d84f2.css.map": "/static/css/main.448d84f2.css.map",
     "main.89ec31c4.js.map": "/static/js/main.89ec31c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb3c3ce3.css",
+    "static/css/main.448d84f2.css",
     "static/js/main.89ec31c4.js"
   ]
 }
