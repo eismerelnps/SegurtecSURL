@@ -1,6 +1,6 @@
 const slides = [
     {
-      image: require('./media/camera-back.png'),
+      image: require('../photos/camera-back.png'),
       caption: 'Slide 1',
     },
     {
