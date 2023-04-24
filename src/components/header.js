@@ -1,15 +1,18 @@
-import React from 'react'
-//import headerPhoto from ''
+import React from "react";
+import slides from "../helpers/getPhotos";
+
+
+
+
 
 export const Header = () => {
   return (
-    <div className='header'>
-   <img className='company-img'
-       src={require('../photos/card-segurtec.png')}
-        alt="Company Logo"
+    <div className="header">
+      <img 
+      className="company-img" 
+      src={ slides[4] } 
+      alt="Company Logo" 
       />
-</div>
-  )
-}
-
-
+    </div>
+  );
+};
