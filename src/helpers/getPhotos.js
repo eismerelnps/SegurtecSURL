@@ -1,6 +1,6 @@
 const Slides = [
     {
-      image: `${process.env.PUBLIC_URL}./assets/camera-back.png`,
+      image: `${process.env.PUBLIC_URL}/assets/camera-back.png`,
       caption: 'Slide 1',
      
     },
