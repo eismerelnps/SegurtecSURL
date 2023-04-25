@@ -1,5 +1,5 @@
 import React from "react";
-import slides from "../helpers/getPhotos";
+import Slides from "../helpers/getPhotos";
 
 
 
@@ -10,7 +10,7 @@ export const Header = () => {
     <div className="header">
       <img 
       className="company-img" 
-      src={ slides[4] } 
+      src={ Slides[4].image } 
       alt="Company Logo" 
       />
     </div>
