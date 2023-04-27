@@ -160,6 +160,15 @@ body {
   padding: 20px;
   margin: 20px 0;
 }
+.card h1 {
+  display: block;
+  font-size: 20px;
+  color: #ff0000;
+}
+.card p {
+  font-size: 15px;
+  color: #333333;
+}
 .card1 {
   text-align: center;
   background-color: f1f1f1;

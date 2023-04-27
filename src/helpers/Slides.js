@@ -1,4 +1,4 @@
-const Products = [
+const Slides = [
   {
     image: `/assets/camera-back.png`,
     caption: 'Cámara exterior',
@@ -19,6 +19,16 @@ const Products = [
     caption: "Barreras perimetrales",
     description: 'Sistema de seguridad para prevenir acceso no autorizado',
   },
+  {
+    image: `./assets/card-segurtec.png`,
+    caption: "SegurTec",
+    description: 'Empresa de seguridad que ofrece soluciones de seguridad para hogares, empresas y propiedades',
+  },
+  {
+    image: `./assets/connection.png`,
+    caption: 'Nuestro esquema',
+    description: ' Diagrama que muestra la interconexión de los componentes del sistema de seguridad',
+  },
 ];
 
-export default Products;
+export default Slides;

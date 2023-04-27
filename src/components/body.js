@@ -1,7 +1,7 @@
 import React from "react";
 import { Offers } from "./statics/offers"
 import { ImageTextBlock } from "./statics/imageTextBlock";
-import Slides from "../helpers/getPhotos";
+import Slides from "../helpers/Slides";
 
 
 export const Body = () => {

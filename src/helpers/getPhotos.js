@@ -1,32 +1,4 @@
-const Slides = [
-    {
-      image: `/assets/camera-back.png`,
-      caption: 'Slide 1',
-     
-    },
-    {
-      image: `./assets/dome.png`,
-      caption: 'Slide 2',
-    },
-    {
-      image: `./assets/gavin.png`,
-      caption: 'Slide 3',
-    },
-    {
-      image: `./assets/lacer.png`,
-      caption: 'Slide 4',
-    },
-    {
-      image: `./assets/card-segurtec.png`,
-      caption: 'Slide 5',
-    },
-    {
-      image: `./assets/connection.png` ,
-      caption: 'Slide 6 ',
-    },
-  ];
-
-  /*
+ /*
   let photos = [];
 
   export const getPhotos = (url) => {
@@ -69,5 +41,3 @@ export const getPhotos = ( ) => {
       })
   });
 };*/
-
-export default Slides;

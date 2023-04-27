@@ -1,5 +1,5 @@
 import React from "react";
-import Slides from "../../helpers/getPhotos";
+import Slides from "../../helpers/Slides";
 
 export const ImageTextBlock = ({ url, title, description }) => {
   return (

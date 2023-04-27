@@ -1,5 +1,6 @@
 import React from "react";
-import Slides from "../helpers/getPhotos";
+import Slides from "../helpers/Slides";
+
 
 
 

@@ -1,14 +1,14 @@
 import React from "react";
 import Slideshow from "./slideshow";
-import slides from "../helpers/getPhotos";
+import slides from "../helpers/Slides";
+import Products from "../helpers/Products";
 
 export const Aside = () => {
   return (
     <div className="aside">
       <div className="card">
-        <h2>Ofertas de la semana</h2>
-        < Slideshow Slides={slides} />
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        <h2>Ofertas</h2>
+        < Slideshow Slides={Products} />
       </div>
       <div className="card">
         <h3>Últimos productos</h3>
