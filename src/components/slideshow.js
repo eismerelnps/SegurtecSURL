@@ -11,10 +11,18 @@ export const Slideshow = ({ Slides }) => {
     return () => clearInterval(interval);
   }, [index, Slides.length]);
 
+  //desestructuring Slides object, now app will work just with image and caption words
+  const { image, caption } = Slides[index]
+
   return (
     <div className="slideshow">
-      <img src={Slides[index].image} alt={Slides[index].caption} />
-      <p className="caption">{Slides[index].caption}</p>
+      <img 
+      src= {`${process.env.PUBLIC_URL}.${image}`}                           
+      alt={caption} 
+      />
+      <p className="caption">
+        {Slides[index].caption}
+        </p>
     </div>
   );
 };

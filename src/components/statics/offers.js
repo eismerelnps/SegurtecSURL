@@ -2,6 +2,7 @@ import React from "react";
 import Slides from "../../helpers/getPhotos";
 export const Offers = () => {
   return (
+    
     <div className="static-offer">
       <div className="static-offer_top">
         <h1></h1>

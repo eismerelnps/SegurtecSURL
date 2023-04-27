@@ -1,27 +1,27 @@
 const Slides = [
     {
-      image: `${process.env.PUBLIC_URL}/assets/camera-back.png`,
+      image: `/assets/camera-back.png`,
       caption: 'Slide 1',
      
     },
     {
-      image: `${process.env.PUBLIC_URL}./assets/dome.png`,
+      image: `./assets/dome.png`,
       caption: 'Slide 2',
     },
     {
-      image: `${process.env.PUBLIC_URL}./assets/gavin.png`,
+      image: `./assets/gavin.png`,
       caption: 'Slide 3',
     },
     {
-      image: `${process.env.PUBLIC_URL}./assets/lacer.png`,
+      image: `./assets/lacer.png`,
       caption: 'Slide 4',
     },
     {
-      image: `${process.env.PUBLIC_URL}./assets/card-segurtec.png`,
+      image: `./assets/card-segurtec.png`,
       caption: 'Slide 5',
     },
     {
-      image: `${process.env.PUBLIC_URL}./assets/connection.png` ,
+      image: `./assets/connection.png` ,
       caption: 'Slide 6 ',
     },
   ];
