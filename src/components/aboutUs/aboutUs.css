@@ -1,0 +1,45 @@
+.about-us {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+}
+.about-us h1 {
+    color: #ff0000;
+}
+.about-us_header {
+    width: 100%;
+}
+.about-us_body {
+    display: flex;
+    justify-content: center;
+}
+.about-us_left {
+    float: left;
+    
+}
+.about-us_right {
+    float: right;
+}
+.about-us_left, .about-us_right {
+    background-color: #cbc9c92d;
+    text-align: center;
+    border: 1px solid #4c4c4c;
+    border-radius: 15px;
+    margin: 25px;
+    padding: 25px;
+    width: 40%;
+}
+
+@media screen and (max-width: 750px) {
+    .about-us {
+        width: 100%;
+    }
+    .about-us_body {
+        display: inline-block;
+    }
+    .about-us_left, .about-us_right {
+        float: none;
+        width: 100%;
+    }
+}

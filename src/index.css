@@ -6,12 +6,14 @@ body {
   margin: 0;
   font-family: Arial;
   background: #f1f1f105;
+  width: 100%;
 }
 
 /* Header/Blog Title */
 .header {
   text-align: center;
   background: rgb(0, 0, 0);
+  width: 100%;
 }
 
 .header h1 {
@@ -160,12 +162,12 @@ body {
   padding: 20px;
   margin: 20px 0;
 }
-.card h1 {
+.card-offer h1 {
   display: block;
   font-size: 20px;
   color: #ff0000;
 }
-.card p {
+.card-offer p {
   font-size: 15px;
   color: #333333;
 }
@@ -193,6 +195,7 @@ body {
   content: "";
   display: table;
   clear: both;
+  width: 100%;
 }
 
 /* Footer */
