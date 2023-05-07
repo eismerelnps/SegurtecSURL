@@ -1,26 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { SegurTecApp } from './SegurTecApp';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { SegurTecApp } from "./SegurTecApp";
 
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import ErrorPage from './components/error-page';
-import { AboutUs } from './components/aboutUs/AboutUs';
-import { Main } from './components/index/main';
-import { Services } from './components/services/Services';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ErrorPage from "./components/error-page";
+import { AboutUs } from "./components/aboutUs/AboutUs";
+import { Main } from "./components/index/main";
+import { Services } from "./components/services/Services";
 
 const router = createBrowserRouter([
   {
-    path: "",
+    basename: "/SegurtecSURL",
+    path: "/",
     element: <SegurTecApp />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/index",
-        element: <Main />
+        element: <Main />,
       },
       {
         path: "/about",
@@ -28,21 +26,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services />
+        element: <Services />,
       },
       {
         path: "/contact",
         element: <ErrorPage />,
       },
-    ]
+    ],
   },
-  
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <RouterProvider router={router} />
-);
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<RouterProvider router={router} />);
 
 //reportWebVitals();
