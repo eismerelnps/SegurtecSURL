@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { SegurTecApp } from "./SegurTecApp";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, NavLink, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/error-page";
 import { AboutUs } from "./components/aboutUs/AboutUs";
 import { Main } from "./components/index/main";
@@ -34,10 +34,12 @@ const router = createBrowserRouter([
       },
     ],
   },
-],{
-  basename: "/eismerelnps.github.io/SegurtecSURL"
+],
+{
+  basename: '/SegurtecSURL',
 }
 );
+<NavLink to="/" />
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
