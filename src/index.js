@@ -14,7 +14,7 @@ import { Services } from './components/services/Services';
 
 const router = createBrowserRouter([
   {
-    path: "https://eismerelnps.github.io/SegurtecSURL/",
+    path: "",
     element: <SegurTecApp />,
     errorElement: <ErrorPage />,
     children: [
