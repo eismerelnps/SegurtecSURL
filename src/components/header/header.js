@@ -18,7 +18,7 @@ export const Header = () => {
     <header className="header">
        <img 
       className="company-img" 
-      src={ Slides[0].image } 
+      src={ `.${Slides[0].image}` } 
       alt="Company Logo" 
       />
       

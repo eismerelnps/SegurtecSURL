@@ -5,7 +5,7 @@ const Slides = [
     description: 'Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores',
   },
   {
-    image: `./assets/dome.png`,
+    image: `/assets/dome.png`,
     caption: "Cámara tipo Domo",
     description: 'Cámara de seguridad en forma semiesférica para una vista panorámica',
   },

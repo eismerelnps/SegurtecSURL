@@ -9,37 +9,37 @@ import { AboutUs } from "./components/aboutUs/AboutUs";
 import { Main } from "./components/index/main";
 import { Services } from "./components/services/Services";
 
-
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <SegurTecApp />,
+      errorElement: <ErrorPage />,
+      children: [
+        {
+          path: "/index",
+          element: <Main />,
+        },
+        {
+          path: "/about",
+          element: <AboutUs />,
+        },
+        {
+          path: "/services",
+          element: <Services />,
+        },
+        {
+          path: "/contact",
+          element: <ErrorPage />,
+        },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <SegurTecApp />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/index",
-        element: <Main />,
-      },
-      {
-        path: "/about",
-        element: <AboutUs />,
-      },
-      {
-        path: "/services",
-        element: <Services />,
-      },
-      {
-        path: "/contact",
-        element: <ErrorPage />,
-      },
-    ],
-  },
-],
-{
-  basename: '/SegurtecSURL',
-}
+    basename: "/SegurtecSURL",
+  }
 );
-<NavLink to="/" />
+<NavLink to="/" />;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
