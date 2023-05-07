@@ -1,6 +1,9 @@
 import React from "react";
 
 export const Footer = () => {
+
+  console.log("Footer again");
+
   return (
     <div className="footer">
       <h2>SegurTec S.U.R.L</h2>

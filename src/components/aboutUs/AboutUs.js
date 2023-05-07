@@ -2,6 +2,9 @@ import React from "react";
 import "./aboutUs.css";
 
 export const AboutUs = () => {
+
+  console.log("Abouts again");
+
   return (
     <div className="about-us">
       <div className="about-us_header">

@@ -9,63 +9,10 @@ body {
   width: 100%;
 }
 
-/* Header/Blog Title */
-.header {
-  text-align: center;
-  background: rgb(0, 0, 0);
-  width: 100%;
-}
-
-.header h1 {
-  font-size: 50px;
-}
-.header img {
-  max-width: 100%;
-  width: auto;
-  height: 500px;
-  object-fit: fill;
-}
-/* Style the top navigation bar */
-.topnav {
-  
-  background-color: #000000;
-  padding: 5px;
- 
- 
-}
-.topnav nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* Style the topnav links */
-.topnav a {
- 
-  border: 1px solid #ff0000;
-  border-radius: 7px;
-  color: #ff0000;
-  background-color: #000000;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  border: 1px solid #ffffff;
-  border-radius: 15px;
-  transition: 500ms;
-  background-color: #111111d5;
-  color: #ffffff;
-}
 
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .body {
-
   border-radius: 7px;
   float: left;
   width: 71%;
@@ -159,7 +106,7 @@ body {
   background-color: f1f1f1;
   border: 1px solid #414a4c;
   border-radius: 15px;
-  padding: 20px;
+  padding: 0px;
   margin: 20px 0;
 }
 .card-offer h1 {
@@ -181,7 +128,6 @@ body {
 }
 .card:hover {
   background-color: #e5e4e2;
-
   transition: 500ms;
 }
 .card img, .card1 img {
@@ -250,11 +196,7 @@ body {
   }*/
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .header img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-  }
+ 
   .body,
   .aside {
     width: 100%;
@@ -288,14 +230,6 @@ body {
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-
-  .topnav {
-    padding: 25px;
-  }
-  .topnav a {
-    float: none;
-    width: 100%;
-}
   .static-offer_middle {
     display: flex;
     flex-wrap: wrap;

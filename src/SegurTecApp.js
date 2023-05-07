@@ -1,30 +1,23 @@
-import React from 'react'
-import { Header } from './components/header'
-import { Footer } from './components/footer'
-import { Aside } from './components/aside'
-import { Topnav } from './components/topnav'
-import { Body } from './components/body'
+import React from "react";
 
+import { Header } from "./components/header/header";
+import { Footer } from "./components/footer/footer";
+import { Aside } from "./components/body/aside";
+import { Topnav } from "./components/header/navbar";
+import { Body } from "./components/body/body";
+import { Outlet } from "react-router-dom";
 
 export const SegurTecApp = () => {
+  console.log("All app again");
+
   return (
-    <div>
-      <header>
-      < Header />
-      
-    </header>
+    <>
+      <Header />
+      <Outlet />
 
-    <div>
-      < Topnav />
-    </div>
-    <div className='row' >
-      < Body />
-      < Aside />
-    </div>
-
-    <footer>
-      < Footer />
-    </footer>
-    </div>
-  )
-}
+      <footer>
+        <Footer />
+      </footer>
+    </>
+  );
+};

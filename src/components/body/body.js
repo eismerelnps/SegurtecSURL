@@ -1,22 +1,27 @@
 import React from "react";
-import { Offers } from "./statics/offers"
-import { ImageTextBlock } from "./statics/imageTextBlock";
-import Slides from "../helpers/Slides";
-import { AboutUs } from "./aboutUs/AboutUs";
+import { Offers } from "../statics/offers"
+import { ImageTextBlock } from "../statics/imageTextBlock";
+import Slides from "../../helpers/Slides";
+import { AboutUs } from "../aboutUs/AboutUs";
 
-
-export const Body = () => {
- // const img = 'src/connection.png'
- // const img2 = 'https://picsum.photos/1500/700'
-  return (
-    <div className="body">
-      < AboutUs />
-      <div className="card1">
-       < ImageTextBlock 
+/*
+ < ImageTextBlock 
        url={ Slides[5].image }
        title='SegurTec S.U.R.L'
        description='Suministro 🛒, Reparación 🚑, Mantenimientos, sistemas de seguridad 📹🚨, equipos de oficina 🖨️🖥️⌨️🖱️💻, redes de datos , entre otros 👍.'
        />
+*/
+export const Body = () => {
+
+  console.log("Body again");
+
+ // const img = 'src/connection.png'
+ // const img2 = 'https://picsum.photos/1500/700'
+  return (
+    <div >
+      
+      <div className="card1">
+      
       </div>
       <div className="card">
         <h2>Articulo 2</h2>

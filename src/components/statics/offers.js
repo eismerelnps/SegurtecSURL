@@ -1,6 +1,9 @@
 import React from "react";
 import Slides from "../../helpers/Slides";
 export const Offers = () => {
+
+  console.log("Offers again");
+
   return (
 
     <div className="static-offer">

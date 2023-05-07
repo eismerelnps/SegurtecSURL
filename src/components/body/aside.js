@@ -1,33 +1,35 @@
 import React from "react";
-import Slideshow from "./SlideShow/Slideshow";
-import slides from "../helpers/Slides";
-import Products from "../helpers/Products";
-import { AboutUs } from "./aboutUs/AboutUs";
+import Products from "../../helpers/Products";
+import Slideshow from "../SlideShow/Slideshow";
+import { Services } from "../services/Services";
 
 export const Aside = () => {
 
+
+  console.log("Aside again");
 
   const Product= ({
     slides: Products,
     interval: 3000,
     transition: "opacity 1s ease-in-out",
     captionPosition: "bottom",
-    width: "100%",
-    height: "500px",
+    width: "auto",
+    height: "350px",
     alt: Products.caption,
     onError: () => {console.log("Error")},
   })
 
   return (
-    <div className="aside">
+    <div >
       <div className="card card-offer">
         <h2>Ofertas</h2>
-
-        
         < Slideshow {...Product} />
-
-
       </div>
+
+      <div className="card">
+        <Services />
+      </div>
+
       <div className="card">
         <h3>Últimos productos</h3>
        

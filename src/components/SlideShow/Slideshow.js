@@ -3,6 +3,9 @@ import PropTypes from "prop-types";
 
 const Slideshow = ({ slides, interval, transition, captionPosition, width, height, alt, onError }) => {
  
+  console.log("Slideshow again");
+
+
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -19,6 +22,12 @@ const Slideshow = ({ slides, interval, transition, captionPosition, width, heigh
   return (
     <div
       className="slideshow"
+      style={{
+        width: width,
+        height: height,
+        position: "relative",
+        overflow: "hidden",
+      }}
     >
       {slides.map((slide, i) => (
         <img
