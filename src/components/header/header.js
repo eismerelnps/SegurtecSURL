@@ -36,7 +36,7 @@ export const Header = () => {
           <b className="bold-text">DEJANOS PROTEGER</b>  LO QUE MÁS TE IMPORTA
         </h3>
         <p className="header-description">
-          You could provide me a friendly SEO text for here please
+        Proteja su hogar o negocio con nuestros servicios ¡Contáctenos hoy mismo!
         </p>
        
       </div>

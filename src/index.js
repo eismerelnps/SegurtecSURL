@@ -9,9 +9,9 @@ import { AboutUs } from "./components/aboutUs/AboutUs";
 import { Main } from "./components/index/main";
 import { Services } from "./components/services/Services";
 
+
 const router = createBrowserRouter([
   {
-    basename: "/SegurtecSURL",
     path: "/",
     element: <SegurTecApp />,
     errorElement: <ErrorPage />,
@@ -34,7 +34,10 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],{
+  basename: "/eismerelnps.github.io/SegurtecSURL"
+}
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={router} />);
