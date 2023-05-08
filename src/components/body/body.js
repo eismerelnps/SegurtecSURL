@@ -3,6 +3,7 @@ import { Offers } from "../statics/offers"
 import { ImageTextBlock } from "../statics/imageTextBlock";
 import Slides from "../../helpers/Slides";
 import { AboutUs } from "../aboutUs/AboutUs";
+import { MyModalComponent } from "../modal/modal";
 
 /*
  < ImageTextBlock 
@@ -19,7 +20,7 @@ export const Body = () => {
  // const img2 = 'https://picsum.photos/1500/700'
   return (
     <div >
-      
+      <MyModalComponent />
       <div className="card1">
       
       </div>
