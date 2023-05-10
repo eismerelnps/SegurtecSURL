@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid justify-content-center align-items-center">
-        <ul className="navbar-nav d-flex">
+        <ul className="navbar-nav d-flex col-sm-12">
 
           {items.map(({ linkTo, caption }) => (
             <ListItem  
@@ -28,16 +28,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-  // {services.map(({image, caption, description}) => (
-  //         <section className="text-center rounded services-section col-10 col-xl-5 p-5 m-3 animate__bounce ">
-  //           <div className="services-item ">
-  //             <div className="services-item-link mb-4">
-  //             <i class={`${image} `} aria-hidden="true"></i>
-  //               <h1 className="text-danger h1">{caption}</h1>
-  //               <p className="text-secondary h4">{description}</p>
-  //             </div>
-  //             <button className="btn btn-outline-danger services-btn">VER DETALLES</button>
-  //           </div>
-  //         </section>
-  //       ))}
- 

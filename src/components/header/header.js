@@ -25,7 +25,7 @@ export const Header = () => {
       <header className="header">
         <img
           className="company-img"
-          src={`${Slides[0].image}`}
+          src={`${Slides[1].image}`}
           alt="Company Logo"
         />
 
@@ -58,7 +58,7 @@ export const Header = () => {
               
               <div className="col text-end">
                 <button
-                  className="fa fa-bars btn "
+                  className="fa fa-bars "
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#demo"

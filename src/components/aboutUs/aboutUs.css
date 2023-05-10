@@ -1,4 +1,4 @@
-.about-us {
+/* .about-us {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 25px;
     padding: 25px;
@@ -42,4 +42,18 @@
         float: none;
         width: 100%;
     }
+} */
+.about-section {
+    background-color: #00000002;
+    border: 1px solid rgba(255, 0, 0, 0.159);
+    opacity: 0.9;
 }
+.about-section:hover {
+    background-color: #00000005;
+    border: 1px solid red;
+    color: red;
+    box-shadow: 1px 1px 7px  #ff0000;
+  }
+  .about-title {
+    font-weight: 700;
+  }

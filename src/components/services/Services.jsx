@@ -26,7 +26,7 @@ export const Services = () => {
 
       <div className="row bg-light justify-content-center">
         {services.map(({image, caption, description}) => (
-          <section className="text-center rounded services-section col-10 col-xl-5 p-5 m-3 animate__bounce ">
+          <section className="services-section text-center rounded  col-10 col-xl-5 p-5 m-3 animate__bounce ">
             <div className="services-item ">
               <div className="services-item-link mb-4">
               <i class={`${image} `} aria-hidden="true"></i>

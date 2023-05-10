@@ -51,7 +51,6 @@
 .services-section {
   background-color: #00000002;
   border: 1px solid rgba(255, 0, 0, 0.159);
-  color: red;
   opacity: 0.9;
 }
 .services-section:hover {

@@ -1,5 +1,10 @@
 const Slides = [
   {
+    image: `/assets/header-image-camera.jpg`,
+    caption: 'Cámara exterior',
+    description: 'Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores',
+  },
+  {
     image: `./assets/camera-back.png`,
     caption: 'Cámara exterior',
     description: 'Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores',

@@ -12,21 +12,7 @@
   margin: 5px;
   padding: 5px;
 }
-.nav-link {
-  border: 1px solid #ff0000;
-  border-radius: 7px;
-  color: #ff0000;
-  background-color: #00000091;
-  display: inline-block;
 
-  padding: 14px 0px;
-  text-align: center;
-  text-decoration: none;
-  width: 170px;
-
-  font-weight: 600;
-  font-size: 1.2rem;
-}
 
 /* Change color on hover 
 .nav-link:hover {
@@ -70,3 +56,9 @@
 }
  */
 
+.nav-link {
+  font-weight: 800;
+}
+.nav-item:hover {
+ box-shadow: 2px 1px 5px #ff0000;
+}
