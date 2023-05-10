@@ -14,7 +14,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid justify-content-center align-items-center">
-        <ul className="navbar-nav d-flex col-sm-12">
+        <ul className="navbar-nav d-flex container-fluid justify-content-center">
 
           {items.map(({ linkTo, caption }) => (
             <ListItem  

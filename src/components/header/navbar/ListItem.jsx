@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export const ListItem = ({ linkto, caption }) => {
   return (
     <li 
-    className="nav-item border rounded p-2 span-12 mt-4"
+    className="nav-item border rounded p-2 span-lg-12 span-xl-3 m-4"
     >
       <NavLink 
       activeclassname="active" 
