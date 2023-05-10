@@ -19,6 +19,11 @@ const Slideshow = ({ slides, interval, transition, captionPosition, width, heigh
 
   const currentSlide = slides[index];
 
+
+
+
+
+  
   return (
     <div
       className="slideshow"

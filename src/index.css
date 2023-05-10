@@ -144,19 +144,7 @@ body {
   width: 100%;
 }
 
-/* Footer */
-.footer {
-  border-top: 1px solid #ff0000;
-  border-top-right-radius: 50px;
-  color: #ffffff;
-  padding: 10px;
-  text-align: center;
-  background: #000000;
-  margin-top: 20px;
-}
-.footer h2 {
-  color: #e60000;
-}
+
 
 
 

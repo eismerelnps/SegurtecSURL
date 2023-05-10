@@ -48,9 +48,9 @@
   color: #ffffff;
 }
 */
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   .navbar {
-    width: 90%;
+    width: 100%;
     padding: 25px;
   }
   .container-fluid{
@@ -68,5 +68,5 @@
     width: 100%;
   }
 }
-
+ */
 

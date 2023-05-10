@@ -1,3 +1,7 @@
+/* .services-header-container {
+  
+} */
+
 .services-header {
   /*background-image: url("your-image-url.jpg");*/
   background-size: cover;
@@ -11,8 +15,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: black;
-  opacity: 0.5;
+  /* background-color: black; */
+  /* opacity: 0.5; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,9 +26,11 @@
   font-size: 6rem;
   color: white;
   text-shadow: 2px 2px 5px black;
-  opacity: 0.1;
+  opacity: 0.2;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  text-shadow: 1px 1px 20px rgb(255, 255, 255);
+  
 }
 
 .services-content {
@@ -41,12 +47,28 @@
   letter-spacing: 0.5rem;
 }
 
-/*body of service component
+/* body of service component */
 .services-section {
-  background-color: rgb(0, 0, 0);
+  background-color: #00000002;
+  border: 1px solid rgba(255, 0, 0, 0.159);
+  color: red;
+  opacity: 0.9;
+}
+.services-section:hover {
+  background-color: #00000005;
   border: 1px solid red;
   color: red;
+  box-shadow: 1px 1px 7px  #ff0000;
 }
+.services-btn:hover {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 7px  #ff0000;
+  color: black;
+  animation: bounce;
+}
+
+/*
 .services-section:hover {
   background-color: rgb(255, 0, 0);
   border: 1px solid rgb(0, 0, 0);

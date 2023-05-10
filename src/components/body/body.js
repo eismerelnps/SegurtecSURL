@@ -1,8 +1,6 @@
 import React from "react";
 import { Offers } from "../statics/offers"
-import { ImageTextBlock } from "../statics/imageTextBlock";
 import Slides from "../../helpers/Slides";
-import { AboutUs } from "../aboutUs/AboutUs";
 import { MyModalComponent } from "../modal/modal";
 
 /*
@@ -27,7 +25,7 @@ export const Body = () => {
       <div className="card">
         <h2>Articulo 2</h2>
         <h5>Titulo descripcion, ABR 21, 2023</h5>
-        <img src={ Slides[5].image } />
+        <img src={ Slides[5].image } alt={Slides[5].caption}/>
         
         <p>
           Sunt in culpa qui officia deserunt mollit anim id est laborum

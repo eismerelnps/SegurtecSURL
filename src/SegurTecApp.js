@@ -2,9 +2,6 @@ import React from "react";
 
 import { Header } from "./components/header/header";
 import { Footer } from "./components/footer/footer";
-import { Aside } from "./components/body/aside";
-import { Topnav } from "./components/header/navbar";
-import { Body } from "./components/body/body";
 import { Outlet } from "react-router-dom";
 
 export const SegurTecApp = () => {

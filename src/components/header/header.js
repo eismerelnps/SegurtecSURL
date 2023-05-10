@@ -2,11 +2,12 @@ import React from "react";
 import Slides from "../../helpers/Slides";
 
 import "./header.css";
-import { Navbar } from "./navbar";
+
 import { Sidebar } from "./sidebar";
 
-import { useState, useEffect, useCallback } from "react";
+// import { useState, useEffect, useCallback } from "react";
 import { useScreen } from "../../hooks/useScreen";
+import { Navbar } from "./navbar/navbar";
 
 export const Header = () => {
   const isMobile = useScreen();
