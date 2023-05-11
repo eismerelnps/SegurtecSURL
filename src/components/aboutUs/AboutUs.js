@@ -6,10 +6,18 @@ export const AboutUs = () => {
   console.log("Abouts again");
 
   return (
-    <div className="about-us bg-light text-center align-item-center p-5">
-      <div className="about-us_header">
-        <h1 className="text-center text-danger about-title">SegurTec</h1>
-        <h4 className="text-center text-primary-dark">“Seguridad Tecnológica”</h4>
+
+    <div className="about-us bg-light text-center align-item-center mt-4 mb-4">
+      <div className="container-fluid-xl services-header-container stiky-top-0">
+        <section className="container-fluid p-4 services-header bg-danger" key={'header'}>
+          <div className="services-overlay">
+            <h1 className="services-title text-light ">Segurtec</h1>
+          </div>
+
+          <div className="services-content">
+            <h2 className="services-subtitle text-light ">Acerca de nosotros</h2>
+          </div>
+        </section>
       </div>
 
       <div className="row  justify-content-center">

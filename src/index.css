@@ -1,7 +1,7 @@
-* {
+*  {
   box-sizing: border-box;
 }
-
+/* 
 body {
   margin: 0;
   font-family: Arial;
@@ -10,20 +10,15 @@ body {
 }
 
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.body {
-  border-radius: 7px;
-  float: left;
-  width: 71%;
-  margin: 1%;
-}
+//Create two unequal columns that floats next to each other
+//Left column
+
 
 .static-offer_top {
   color: #111111;
   display: block;
 }
-/*creates a red cicle*/
+creates a red cicle
 .circle {
   width: 120px;
   height: 120px;
@@ -78,7 +73,7 @@ body {
 
 
 
-/* Right column */
+Right column
 .aside {
   border-radius: 7px;
   float: left;
@@ -93,14 +88,14 @@ body {
   height: auto;
 }
 
-/* Fake image */
+Fake image
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
 
-/* Add a card effect for articles */
+Add a card effect for articles
 .card {
   text-align: center;
   background-color: f1f1f1;
@@ -136,7 +131,7 @@ body {
   height: auto;
 }
 
-/* Clear floats after the columns */
+Clear floats after the columns
 .row::after {
   content: "";
   display: table;
@@ -152,7 +147,7 @@ body {
 
 
 
-/*Css for imageTextBlock component*/
+Css for imageTextBlock component
 .image-text-block-container {
   position: relative;
   font-family: Arial;
@@ -181,8 +176,8 @@ body {
     font-size: 5px;
     padding-left: 5px;
     padding-right: 5px;;
-  }*/
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  }
+Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other
 @media screen and (max-width: 800px) {
  
   .body,
@@ -190,7 +185,7 @@ body {
     width: 100%;
     padding: 0;
   }
- /*Css for imageTextBlock component*/
+ //Css for imageTextBlock component
 .image-text-block-container {
   position: relative;
   font-family: Arial;
@@ -216,7 +211,7 @@ body {
     
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other
 @media screen and (max-width: 400px) {
   .static-offer_middle {
     display: flex;
@@ -265,4 +260,4 @@ body {
 .fa-instagram {
   background: #125688;
   color: white;
-}
+} */

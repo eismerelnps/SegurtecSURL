@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   },
 ],
 {
-    basename: '/SegurtecSURL',
+    basename: '/',
   
 }
 );

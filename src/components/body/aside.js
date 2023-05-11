@@ -2,6 +2,7 @@ import React from "react";
 import Products from "../../helpers/Products";
 import Slideshow from "../SlideShow/Slideshow";
 import { Services } from "../services/Services";
+import { AboutUs } from "../aboutUs/AboutUs";
 
 export const Aside = () => {
 
@@ -27,7 +28,7 @@ export const Aside = () => {
       </div>
 
       <div className="card">
-        <Services />
+       
       </div>
 
       <div className="card">

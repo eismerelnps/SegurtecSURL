@@ -28,8 +28,8 @@ export const Services = () => {
         {services.map(({image, caption, description}) => (
           <section className="services-section text-center rounded  col-10 col-xl-5 p-5 m-3 animate__bounce ">
             <div className="services-item ">
-              <div className="services-item-link mb-4">
-              <i class={`${image} `} aria-hidden="true"></i>
+              <div className="services-item-link mb-4 justify-content-center">
+              <i class={`${image} text-center`} aria-hidden="true"></i>
                 <h1 className="text-danger h1">{caption}</h1>
                 <p className="text-secondary h4">{description}</p>
               </div>

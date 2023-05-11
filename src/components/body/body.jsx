@@ -2,6 +2,9 @@ import React from "react";
 import { Offers } from "../statics/offers"
 import Slides from "../../helpers/Slides";
 import { MyModalComponent } from "../modal/modal";
+import { Services } from "../services/Services";
+import { AboutUs } from "../aboutUs/AboutUs";
+import { Product } from "../products/product";
 
 /*
  < ImageTextBlock 
@@ -17,10 +20,12 @@ export const Body = () => {
  // const img = 'src/connection.png'
  // const img2 = 'https://picsum.photos/1500/700'
   return (
-    <div >
+    <div className=" mt-xl-5">
       <MyModalComponent />
       <div className="card1">
-      
+      <Product />
+      <Services />
+      <AboutUs />
       </div>
       <div className="card">
         <h2>Articulo 2</h2>

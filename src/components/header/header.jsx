@@ -3,7 +3,7 @@ import Slides from "../../helpers/Slides";
 
 import "./header.css";
 
-import { Sidebar } from "./sidebar";
+import { Sidebar } from "./sidebar/sidebar";
 
 // import { useState, useEffect, useCallback } from "react";
 import { useScreen } from "../../hooks/useScreen";
@@ -58,7 +58,7 @@ export const Header = () => {
               
               <div className="col text-end">
                 <button
-                  className="fa fa-bars "
+                  className="fa fa-bars btn text-danger"
                   type="button"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#demo"

@@ -59,6 +59,13 @@
 .nav-link {
   font-weight: 800;
 }
+
 .nav-item:hover {
  box-shadow: 2px 1px 5px #ff0000;
+ 
+}
+@media screen and (min-width: 1001px) {
+  .nav-item {
+  width: 170px;
+ }
 }
