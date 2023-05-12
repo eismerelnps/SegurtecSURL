@@ -7,9 +7,9 @@ export const ProductRow = ({ product }) => {
     </span>;
 
   return (
-    <tr>
-      <td>{name}</td>
-      <td>{product.price}</td>
+    <tr className='product-row'>
+      <td className='product-row_name'>{name}</td>
+      <td className='product-row_price texrt-success'>{ product.price }</td>
     </tr>
   );
 }
