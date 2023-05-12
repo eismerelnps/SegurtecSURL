@@ -26,11 +26,11 @@ export const ProductTable = ({ products, filterText, inStockOnly }) => {
   });
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Price</th>
+    <table className="product-table border ">
+      <thead className="d-flex flex-row flex-fill">
+        <tr className="bg-danger text-light">  
+          <th className=" col-6 text-center">Name</th>
+          <th className="bg-primary col-6 text-center">Price</th>
         </tr>
       </thead>
       <tbody>{rows}</tbody>

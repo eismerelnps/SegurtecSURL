@@ -13,7 +13,7 @@ export const Product = () => {
   ];
 
   return (
-    <div className='product-container'>
+    <div className='product-container bg-light p-2 '>
       <FilterableProductTable products={PRODUCTS} />
     </div>
   )

@@ -8,7 +8,7 @@ export const FilterableProductTable = ({ products }) => {
    const [ inStockOnly, setInStockOnly ] = useState(false);
    
     return (
-        <div className='filterableProductTable'>
+        <div className='filterableProductTable justify-content-center'>
           <SearchBar 
           filterText={ filterText }
           inStockOnly={ inStockOnly } 
