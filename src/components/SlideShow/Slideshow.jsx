@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 
-const Slideshow = ({ slides, interval, transition, captionPosition, width, height, alt, onError }) => {
- 
+const Slideshow = ({
+  slides,
+  interval,
+  transition,
+  captionPosition,
+  width,
+  height,
+  alt,
+  onError,
+}) => {
   console.log("Slideshow again");
-
 
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-
     const slideInterval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % slides.length);
     }, interval);
@@ -19,11 +25,6 @@ const Slideshow = ({ slides, interval, transition, captionPosition, width, heigh
 
   const currentSlide = slides[index];
 
-
-
-
-
-  
   return (
     <div
       className="slideshow"
@@ -35,22 +36,25 @@ const Slideshow = ({ slides, interval, transition, captionPosition, width, heigh
       }}
     >
       {slides.map((slide, i) => (
-        <img
-          key={i}
-          src={`${process.env.PUBLIC_URL}.${slide.image}`}
-          alt={slide.alt || alt}
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            opacity: index === i ? 1 : 0,
-            transition: transition,
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-          }}
-          onError={onError}
-        />
+        <div className="mySlides ">
+           <div class="numbertext">1 / 3</div>
+          <img
+            key={i}
+            src={`${process.env.PUBLIC_URL}.${slide.image}`}
+            alt={slide.alt || alt}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              opacity: index === i ? 1 : 0,
+              transition: transition,
+              objectFit: "cover",
+              width: "100%",
+              height: "100%",
+            }}
+            onError={onError}
+          />
+        </div>
       ))}
       <div
         className="caption"
@@ -69,6 +73,7 @@ const Slideshow = ({ slides, interval, transition, captionPosition, width, heigh
         <h2>{currentSlide.caption}</h2>
         <p>{currentSlide.description}</p>
       </div>
+     
     </div>
   );
 };

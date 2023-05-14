@@ -1,37 +1,41 @@
 import React from "react";
-import { Offers } from "../statics/offers"
+import { Offers } from "../statics/offers";
 import Slides from "../../helpers/Slides";
 import { MyModalComponent } from "../modal/modal";
 import { Services } from "../services/Services";
 import { AboutUs } from "../aboutUs/AboutUs";
 import { Product } from "../products/product";
+import  Slideshow  from "../SlideShow/Slideshow";
+import Products from "../../helpers/Products";
 
-/*
- < ImageTextBlock 
-       url={ Slides[5].image }
-       title='SegurTec S.U.R.L'
-       description='Suministro 🛒, Reparación 🚑, Mantenimientos, sistemas de seguridad 📹🚨, equipos de oficina 🖨️🖥️⌨️🖱️💻, redes de datos , entre otros 👍.'
-       />
-*/
 export const Body = () => {
-
   console.log("Body again");
 
- // const img = 'src/connection.png'
- // const img2 = 'https://picsum.photos/1500/700'
-  return (
+  const SLIDES= ({
+    slides: Products,
+    interval: 6000,
+    transition: "opacity 1s ease-in-out",
+    captionPosition: "bottom",
+    width: "auto",
+    height: "350px",
+    alt: Products.caption,
+    onError: () => {console.log("Error")},
+  })
+ return (
+  
     <div className=" mt-xl-5">
       <MyModalComponent />
       <div className="card1">
-      <Product />
-      <Services />
-      <AboutUs />
+        <Slideshow {...SLIDES} />
+        <Product />
+        <Services />
+        <AboutUs />
       </div>
       <div className="card">
         <h2>Articulo 2</h2>
         <h5>Titulo descripcion, ABR 21, 2023</h5>
-        <img src={ Slides[5].image } alt={Slides[5].caption}/>
-        
+        <img src={Slides[5].image} alt={Slides[5].caption} />
+
         <p>
           Sunt in culpa qui officia deserunt mollit anim id est laborum
           consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -40,7 +44,7 @@ export const Body = () => {
         </p>
       </div>
       <div className="card">
-        < Offers />
+        <Offers />
       </div>
     </div>
   );

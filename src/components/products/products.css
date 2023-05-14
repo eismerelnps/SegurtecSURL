@@ -1,0 +1,7 @@
+.product-row {
+   width: 100%;
+}
+
+.product-row:hover {
+    background-color: red;
+}

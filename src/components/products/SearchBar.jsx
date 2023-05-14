@@ -1,28 +1,31 @@
-import React from 'react'
+import React from "react";
 
-export const SearchBar = ({ 
-    filterText, 
-    inStockOnly,
-    OnFilterTextChange,
-    onInStockOnlyChange }) => {
-    return (
-        <form className='form justify-content-center '>
-          <input 
-          className='container-fluid rounded-5 border-danger text-center'
-          type="text"
-          value={ filterText } 
-          placeholder="Search..." 
-          onChange={(e) => OnFilterTextChange(e.target.value)}/>
-          <label className='float-end text-secondary'>
-            <input 
-            className=''
+export const SearchBar = ({
+  filterText,
+  inStockOnly,
+  onFilterTextChange,
+  onInStockOnlyChange,
+}) => {
+  return (
+    <form className="d-flex flex-column">
+      <input
+        className="form form-control text-center rounded-5 bg-light"
+        type="text"
+        value={filterText}
+        placeholder="Buscar..."
+        onChange={(e) => onFilterTextChange(e.target.value)}
+      />
+      <label>
+        <div className="d-flex align-item-center justify-content-end">
+          <input
+            className="me-2"
             type="checkbox"
-            checked={ inStockOnly } 
+            checked={inStockOnly}
             onChange={(e) => onInStockOnlyChange(e.target.checked)}
-            />
-            {' '}
-            Only show products in stock
-          </label>
-        </form>
-      );
-}
+          />{" "}
+          <p className="m-0 p-0">Mostrar solo productos en stock</p>
+        </div>
+      </label>
+    </form>
+  );
+};
