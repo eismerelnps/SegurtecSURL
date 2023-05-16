@@ -21,7 +21,7 @@ export const Body = () => {
     <div className=" mt-xl-5">
       <MyModalComponent />
 
-      <div className="card card1">
+      <div className="card card1 text-center mx-2 my-0">
       
        
        

@@ -6,6 +6,7 @@ const Products = [
     stocked: false,
     image: `/assets/camera-back.png`,
     name: "Cámara exterior",
+    model: '',
     description:
       "Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores",
   },
@@ -16,6 +17,7 @@ const Products = [
     stocked: true,
     image: `/assets/dome.png`,
     name: "Domo exterior",
+    model: '',
     description:
       "Cámara de seguridad en forma semiesférica para una vista panorámica",
   },
@@ -26,6 +28,7 @@ const Products = [
     stocked: true,
     image: `/assets/camera-back.png`,
     name: "Cámara exterior",
+    model: '',
     description:
       "Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores",
   },
@@ -36,6 +39,7 @@ const Products = [
     stocked: true,
     image: `/assets/dome.png`,
     name: "Domo exterior",
+    model: '',
     description:
       "Cámara de seguridad en forma semiesférica para una vista panorámica",
   },
@@ -46,6 +50,7 @@ const Products = [
     stocked: true,
     image: `/assets/camera-back.png`,
     name: "Cámara exterior",
+    model: '',
     description: 'Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores',
   },
   {
@@ -55,6 +60,7 @@ const Products = [
     stocked: true,
     image: `/assets/dome.png`,
     name: "Domo exterior",
+    model: '',
     description:
       "Cámara de seguridad en forma semiesférica para una vista panorámica",
    },

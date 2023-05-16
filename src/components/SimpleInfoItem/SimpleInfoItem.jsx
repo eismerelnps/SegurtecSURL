@@ -9,17 +9,17 @@ export const SimpleInfoItem = ({
 }) => {
   return (
     <>
-      <div className="item-header-container container-fluid-xl stiky-top-0">
+      <div className="item-header-container container-fluid-xl stiky-top-0 h-5 rounded-xl-5">
         <section
           className=" item-header container-fluid p-4 bg-danger"
           key={"header"}
         >
           <div className="item-overlay">
-            <h1 className="item-title text-light">{ItemTitle}</h1>
+            <h1 className="item-title text-light ">{ItemTitle}</h1>
           </div>
 
           <div className="item-content">
-            <h2 className="item-subtitle text-light">{ItemDescription}</h2>
+            <h2 className="item-subtitle text-light fs-1">{ItemDescription}</h2>
           </div>
         </section>
       </div>

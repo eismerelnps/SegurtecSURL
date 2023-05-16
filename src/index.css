@@ -88,48 +88,7 @@ Left column */
   height: auto;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
-/* Add a card effect for articles */
-.card {
-  text-align: center;
-  background-color: f1f1f1;
-  border: 1px solid #414a4c;
-  border-radius: 15px;
-  padding: 0px;
-  margin: 20px 0;
-}
-.card-offer h1 {
-  display: block;
-  font-size: 20px;
-  color: #ff0000;
-}
-.card-offer p {
-  font-size: 15px;
-  color: #333333;
-}
-.card1 {
-  text-align: center;
-  background-color: f1f1f1;
-  border: 1px solid #414a4c3a;
-  border-radius: 15px;
-  padding: 0;
-  margin: 0;
-}
-.card:hover {
-  background-color: #e5e4e2;
-  transition: 500ms;
-}
-.card img, .card1 img {
-  border-radius: 15px;
-  max-width: 100%;
-  height: auto;
-}
 
 /* Clear floats after the columns */
 .row::after {

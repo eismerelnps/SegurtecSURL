@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+
 import "./slideshowADS.css";
 
 const SlideshowADS = ({
@@ -32,28 +33,29 @@ const SlideshowADS = ({
 
   return (
     <div
-      className="slideshow mt-4"
-      style={{
-        width,
-        height,
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
+    className='slideshow mt-4 container-sm'
+    style={{
+      width: width,
+      height: height,
+      position: "relative",
+      overflow: "hidden",
+    }}
+  >
       {slides.map((slide, i) => (
         <img
+        className=""
           key={i}
-          src={`${process.env.PUBLIC_URL}${slide.image}`}
+          src={`${process.env.PUBLIC_URL}.${slide.image}`}
           alt={slide.alt || alt}
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             opacity: index === i ? 1 : 0,
-            transition,
+            transition: transition,
             objectFit: "cover",
-            width: "100%",
-            height: "100%",
+            width: width,
+            height: height,
           }}
           onError={onError}
         />
@@ -104,8 +106,8 @@ SlideshowADS.propTypes = {
   interval: PropTypes.number,
   transition: PropTypes.string,
   captionPosition: PropTypes.oneOf(["top", "bottom"]),
-  width: PropTypes.string,
-  height: PropTypes.string,
+  // width: PropTypes.string,
+  // height: PropTypes.string,
   alt: PropTypes.string,
   onError: PropTypes.func,
 };
