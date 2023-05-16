@@ -29,7 +29,7 @@ const Slideshow = ({
 
   return (
     <div
-      className="slideshow"
+      className="slideshow mt-4"
       style={{
         width: width,
         height: height,

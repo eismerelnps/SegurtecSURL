@@ -1,71 +1,17 @@
-/*Style the navigation bar 
-.navbar {
-  background-color: transparent;
-  padding: 10px 5px;
-}
-.navbar-nav {
-  display: flex;
-  align-items: center;
-}
-
-.nav-item {
-  margin: 5px;
-  padding: 5px;
-}
-
-
-/* Change color on hover 
-.nav-link:hover {
-  border: 1px solid #ffffff;
-  border-radius: 15px;
-  transition: 500ms;
-  background-color: #111111d5;
-  color: #ffffff;
-}
-.active {
-    background-color: #ff000035;
-   
-  }
-.active:hover {
-  border: 1px solid #ffffff;
-  border-radius: 15px;
-  transition: 500ms;
-  background-color: #111111c1;
-  color: #ffffff;
-}
-*/
-/* @media screen and (max-width: 1000px) {
-  .navbar {
-    width: 100%;
-    padding: 25px;
-  }
-  .container-fluid{
-    width: 100%;
-  }
-  .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
-  .nav-item {
-    float: none;
-    width: 100%;
-  }
-  .nav-link {
-    width: 100%;
-  }
-}
- */
-
 .nav-link {
   font-weight: 800;
 }
 
-.nav-item:hover {
- box-shadow: 2px 1px 5px #ff0000;
+.nav-link:hover {
+  box-shadow: 1px 1px 5px #ff0000;
+}
+.active {
+  background-color: #ff000035;
+  color: #ffffff;
  
 }
 @media screen and (min-width: 1001px) {
   .nav-item {
-  width: 170px;
- }
+    width: 170px;
+  }
 }

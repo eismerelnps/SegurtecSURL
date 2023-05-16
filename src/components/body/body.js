@@ -32,7 +32,7 @@ export const Body = () => {
       <MyModalComponent />
 
       <div className="card card1">
-       < Slideshow2 {...Product} />
+      
        
        
       </div>

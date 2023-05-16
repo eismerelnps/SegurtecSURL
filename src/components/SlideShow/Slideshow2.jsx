@@ -32,7 +32,7 @@ const Slideshow2 = ({
 
   return (
     <div
-      className="slideshow"
+      className="slideshow mt-4"
       style={{
         width,
         height,
@@ -76,16 +76,16 @@ const Slideshow2 = ({
         {slides.map((slide, i) => (
           <span
             key={i}
-            className={`dot ${index === i ? "active" : ""}`}
+            className={`dot ${index === i ? 'current' : ''}`}
             onClick={() => setIndex(i)}
           ></span>
         ))}
       </div>
 
-      <a className="prev" href="#" onClick={handlePrevSlide}>
+      <a className="prev"  onClick={handlePrevSlide}>
         &#10094;
       </a>
-      <a className="next" href="#" onClick={handleNextSlide}>
+      <a className="next"  onClick={handleNextSlide}>
         &#10095;
       </a>
     </div>

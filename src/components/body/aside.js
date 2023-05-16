@@ -20,8 +20,8 @@ export const Aside = () => {
 
   return (
     <div >
-      <div className="card card-offer">
-        <h2>Ofertas</h2>
+      <div className="card card-offer mt-4">
+        <h2 className="text-center text-danger">Ofertas</h2>
         < Slideshow {...Product} />
       </div>
 
