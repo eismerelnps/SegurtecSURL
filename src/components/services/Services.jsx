@@ -1,18 +1,19 @@
 import React from "react";
 
-import "./services.css";
 import services from "../../helpers/services";
 
+import "./services.css";
 import 'animate.css';
+
 
 export const Services = () => {
   console.log("Services");
 
-  // const {image, caption, description } = services;
+
 
   return (
     <>
-      <div className="container-fluid-xl services-header-container stiky-top-0">
+      <div className="services-header-container container-fluid-xl  stiky-top-0">
         <section className="container-fluid p-4 services-header bg-danger" key={'header'}>
           <div className="services-overlay">
             <h1 className="services-title text-light ">SERVICIOS</h1>

@@ -1,6 +1,8 @@
 import React from "react";
 import Products from "../../helpers/Products";
 import Slideshow from "../SlideShow/Slideshow";
+import { FilterableProductTable } from "../products/FilterableProductTable";
+
 
 export const Aside = () => {
 
@@ -26,21 +28,13 @@ export const Aside = () => {
       </div>
 
       <div className="card">
-       
+        
       </div>
 
       <div className="card">
         <h3>Últimos productos</h3>
-       
-        <div className="fakeimg">
-          <p>Image</p>
-        </div>
-        <div className="fakeimg">
-          <p>Image</p>
-        </div>
-        <div className="fakeimg">
-          <p>Image</p>
-        </div>
+        <FilterableProductTable products={Products} />
+        <products />
       </div>
       <div className="card">
         <h3>Siguenos</h3>

@@ -7,22 +7,12 @@ import { AboutUs } from "../aboutUs/AboutUs";
 
 import Slideshow from "../SlideShow/Slideshow";
 import Products from "../../helpers/Products";
-import Slideshow2  from "../SlideShow/Slideshow2";
+
 
 export const Body = () => {
   console.log("Body again");
 
   
-  const Product= ({
-    slides: Products,
-    interval: 5000,
-    transition: "opacity 1s ease-in-out",
-    captionPosition: "bottom",
-    width: "auto",
-    height: "350px",
-    alt: Products.caption,
-    onError: () => {console.log("Error")},
-  })
 
 
 

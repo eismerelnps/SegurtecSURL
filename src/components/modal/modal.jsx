@@ -16,7 +16,7 @@ export const MyModalComponent = () => {
               ></button>
             </div>
 
-            <div className="modal-body"><ipsum className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo nemo laboriosam autem mollitia. Tenetur tempore, similique alias, reiciendis odio debitis nihil id labore excepturi rem aliquam voluptatum molestias veniam!</ipsum></div>
+            <div className="modal-body"><p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo nemo laboriosam autem mollitia. Tenetur tempore, similique alias, reiciendis odio debitis nihil id labore excepturi rem aliquam voluptatum molestias veniam!</p></div>
 
             <div className="modal-footer">
               <button

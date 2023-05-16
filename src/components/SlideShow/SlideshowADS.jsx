@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import "./slideshow2.css";
+import "./slideshowADS.css";
 
-const Slideshow2 = ({
+const SlideshowADS = ({
   slides,
   interval,
   transition,
@@ -92,7 +92,7 @@ const Slideshow2 = ({
   );
 };
 
-Slideshow2.propTypes = {
+SlideshowADS.propTypes = {
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
@@ -110,7 +110,7 @@ Slideshow2.propTypes = {
   onError: PropTypes.func,
 };
 
-Slideshow2.defaultProps = {
+SlideshowADS.defaultProps = {
   interval: 3000,
   transition: "opacity 1s ease-in-out",
   captionPosition: "bottom",
@@ -119,4 +119,4 @@ Slideshow2.defaultProps = {
   onError: () => {},
 };
 
-export default Slideshow2;
+export default SlideshowADS;
