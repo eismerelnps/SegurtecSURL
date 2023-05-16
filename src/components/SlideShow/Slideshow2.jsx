@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
+import "./slideshow2.css";
 
-import './slideshow.css';
-
-const Slideshow = ({
+const Slideshow2 = ({
   slides,
   interval,
   transition,
@@ -13,8 +12,6 @@ const Slideshow = ({
   alt,
   onError,
 }) => {
-  console.log("Slideshow again");
-
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -25,14 +22,20 @@ const Slideshow = ({
     return () => clearInterval(slideInterval);
   }, [interval, slides.length]);
 
-  const currentSlide = slides[index];
+  const handlePrevSlide = () => {
+    setIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+  };
+
+  const handleNextSlide = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % slides.length);
+  };
 
   return (
     <div
       className="slideshow"
       style={{
-        width: width,
-        height: height,
+        width,
+        height,
         position: "relative",
         overflow: "hidden",
       }}
@@ -40,14 +43,14 @@ const Slideshow = ({
       {slides.map((slide, i) => (
         <img
           key={i}
-          src={`${process.env.PUBLIC_URL}.${slide.image}`}
+          src={`${process.env.PUBLIC_URL}${slide.image}`}
           alt={slide.alt || alt}
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             opacity: index === i ? 1 : 0,
-            transition: transition,
+            transition,
             objectFit: "cover",
             width: "100%",
             height: "100%",
@@ -55,6 +58,7 @@ const Slideshow = ({
           onError={onError}
         />
       ))}
+
       <div
         className="caption"
         style={{
@@ -69,16 +73,26 @@ const Slideshow = ({
           textAlign: "center",
         }}
       >
-       
-       
-        <h2>{currentSlide.caption}</h2>
-        <p>{currentSlide.description}</p>
+        {slides.map((slide, i) => (
+          <span
+            key={i}
+            className={`dot ${index === i ? "active" : ""}`}
+            onClick={() => setIndex(i)}
+          ></span>
+        ))}
       </div>
+
+      <a className="prev" href="#" onClick={handlePrevSlide}>
+        &#10094;
+      </a>
+      <a className="next" href="#" onClick={handleNextSlide}>
+        &#10095;
+      </a>
     </div>
   );
 };
 
-Slideshow.propTypes = {
+Slideshow2.propTypes = {
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
@@ -96,7 +110,7 @@ Slideshow.propTypes = {
   onError: PropTypes.func,
 };
 
-Slideshow.defaultProps = {
+Slideshow2.defaultProps = {
   interval: 3000,
   transition: "opacity 1s ease-in-out",
   captionPosition: "bottom",
@@ -105,4 +119,4 @@ Slideshow.defaultProps = {
   onError: () => {},
 };
 
-export default Slideshow;
+export default Slideshow2;

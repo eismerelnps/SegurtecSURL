@@ -4,16 +4,18 @@ import Slides from "../../helpers/Slides";
 import { MyModalComponent } from "../modal/modal";
 import { Services } from "../services/Services";
 import { AboutUs } from "../aboutUs/AboutUs";
-import { Product } from "../products/product";
-import  Slideshow  from "../SlideShow/Slideshow";
+
+import Slideshow from "../SlideShow/Slideshow";
 import Products from "../../helpers/Products";
+import Slideshow2  from "../SlideShow/Slideshow2";
 
 export const Body = () => {
   console.log("Body again");
 
-  const SLIDES= ({
+  
+  const Product= ({
     slides: Products,
-    interval: 6000,
+    interval: 5000,
     transition: "opacity 1s ease-in-out",
     captionPosition: "bottom",
     width: "auto",
@@ -21,16 +23,33 @@ export const Body = () => {
     alt: Products.caption,
     onError: () => {console.log("Error")},
   })
+
+
+
  return (
   
     <div className=" mt-xl-5">
       <MyModalComponent />
-      <div className="card1">
-        <Slideshow {...SLIDES} />
-        <Product />
-        <Services />
+
+      <div className="card card1">
+       < Slideshow2 {...Product} />
+       
+       
+      </div>
+
+      <div className="card card2">
+        
+      
+         <Services />
+      </div>
+
+      <div className="card card3">
+        
+       
+       
         <AboutUs />
       </div>
+
       <div className="card">
         <h2>Articulo 2</h2>
         <h5>Titulo descripcion, ABR 21, 2023</h5>
