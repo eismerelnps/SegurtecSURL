@@ -27,7 +27,7 @@ const Products = [
     price: "0.00",
     stocked: true,
     image: `/assets/camera-back.png`,
-    name: "Cámara exterior",
+    name: "Alarma",
     model: '',
     description:
       "Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores",
@@ -38,7 +38,7 @@ const Products = [
     price: "0.00",
     stocked: true,
     image: `/assets/dome.png`,
-    name: "Domo exterior",
+    name: "Enanitos Verdes",
     model: '',
     description:
       "Cámara de seguridad en forma semiesférica para una vista panorámica",
@@ -49,7 +49,7 @@ const Products = [
     price: "0.00",
     stocked: true,
     image: `/assets/camera-back.png`,
-    name: "Cámara exterior",
+    name: "Chipojos",
     model: '',
     description: 'Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores',
   },
@@ -59,7 +59,7 @@ const Products = [
     price: "0.00",
     stocked: true,
     image: `/assets/dome.png`,
-    name: "Domo exterior",
+    name: "Keloco",
     model: '',
     description:
       "Cámara de seguridad en forma semiesférica para una vista panorámica",
