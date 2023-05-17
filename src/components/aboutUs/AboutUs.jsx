@@ -13,7 +13,7 @@ export const AboutUs = () => {
   return (
     <>
     <SimpleInfoItem Items={AboutUsInfo} ItemTitle='SegurTec' ItemDescription='Acerca de Nosotros'/>
-    <Accordion Items={Items} />
+    <Accordion items={Items} />
     </>
   );
 };
