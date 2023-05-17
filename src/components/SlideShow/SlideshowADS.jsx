@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
+import useWindowSize from "../../hooks/useWindowSize";
+
+
 import "./slideshowADS.css";
 
 const SlideshowADS = ({
@@ -8,12 +11,11 @@ const SlideshowADS = ({
   interval,
   transition,
   captionPosition,
-  width,
-  height,
   alt,
   onError,
 }) => {
   const [index, setIndex] = useState(0);
+  const windowSize = useWindowSize(); // Get the window size
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
@@ -31,12 +33,47 @@ const SlideshowADS = ({
     setIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
+  const getWidthAndHeight = () => {
+    // Adjust width and height based on screen size
+    if (windowSize.width < 375 ) {
+      return {
+        width: "100%",
+        height: "75px",
+      };
+    }
+    else if (windowSize.width >= 375 && windowSize.width < 576) {
+      return {
+        width: "100%",
+        height: "125px",
+      };
+    } else if (windowSize.width >= 576 && windowSize.width < 992) {
+      return {
+        width: "100%",
+        height: "200px",
+      };
+    } else if (windowSize.width >= 992 && windowSize.width < 1200) {
+      return {
+        width: "100%",
+        height: "250px",
+      };
+    } 
+    else {
+      return {
+        width: "100%",
+        height: "350px",
+      };
+    }
+  };
+
+  const { width, height } = getWidthAndHeight(); // Get adjusted width and height
+
+
   return (
     <div
-    className='slideshow mt-4 container-sm'
+    className='slideshow mt-1 '
     style={{
-      width: width,
-      height: height,
+      width,
+      height,
       position: "relative",
       overflow: "hidden",
     }}
@@ -54,8 +91,8 @@ const SlideshowADS = ({
             opacity: index === i ? 1 : 0,
             transition: transition,
             objectFit: "cover",
-            width: width,
-            height: height,
+            width,
+            height,
           }}
           onError={onError}
         />

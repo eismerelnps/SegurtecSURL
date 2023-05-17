@@ -66,7 +66,7 @@ export const ADS = ({
     transition: "opacity 1s ease-in-out",
     captionPosition: "bottom",
     width: '100%',
-    height: '110px',
+    height: '100px',
     alt: Products.caption,
     onError: () => {console.log("Error")},
   })
