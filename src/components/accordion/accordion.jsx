@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
+
 import "./accordion.css";
-import 'animate.css';
+import "animate.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Accordion = ({ items }) => {
-
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -14,24 +15,31 @@ export const Accordion = ({ items }) => {
   return (
     <>
       {items.map(({ caption, description }, index) => (
-
         <div key={index}>
-          <button
-            className={`accordion text-center text-danger fs-2 border rounded-2 p-4 ${
-              activeIndex === index ? "active" : ""
+          <div
+              className={`accordion row d-flex align-items-center p-2 ${
+                activeIndex === index ? "active" : ""
+              }`}
+              onClick={() => toggleAccordion(index)}
+            >
+              <p className='text-left text-danger fs-2 col-11'>{caption}</p>
+              <i class={` col-1 ${
+                activeIndex === index ? " fa-solid fa-arrow-up fa-bounce fa-xl text-danger" : "fa-solid fa-arrow-down fa-xl "
+              }`}></i>
+          </div>
+
+          <div
+            className={`panel text-center animate__animated animate__backInLeft p-3 ${
+              activeIndex === index && "accordion-active"
             }`}
-            onClick={() => toggleAccordion(index)}
-            
           >
-            {caption}
-          </button>
-
-
-          <div className={`panel text-center animate__animated animate__backInLeft p-3 ${activeIndex === index && "accordion-active" }`}>
             <p className="text-body fs-3">{description}</p>
           </div>
+          <hr/>
         </div>
+        
       ))}
+      
     </>
   );
 };
