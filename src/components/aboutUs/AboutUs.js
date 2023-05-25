@@ -7,6 +7,7 @@ import { Accordion } from "../accordion/accordion";
 import { RoadTextSideImage } from "../items/roadTextSideImage/RoadTextSideImage";
 import AboutUsInfo from "../../helpers/AboutUsInfo";
 import Items from "../../helpers/AccordionItemInfo";
+import services from '../../helpers/services'
 
 const {image} = AboutUsInfo
 
@@ -15,7 +16,7 @@ export const AboutUs = () => {
 
   return (
     <>
-    <RoadTextSideImage />
+    <RoadTextSideImage Items={services}/>
     <SimpleInfoItem Items={AboutUsInfo} ItemTitle='SegurTec' ItemDescription='Acerca de Nosotros'/>
     <Accordion items={Items} />
     </>
