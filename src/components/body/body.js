@@ -29,15 +29,15 @@ export const Body = () => {
 
       <div className="card card2">
         
-      
-         <Services />
+      <AboutUs />
+        
       </div>
 
       <div className="card card3">
         
+        <Services />
        
-       
-        <AboutUs />
+        
       </div>
 
       <div className="card">

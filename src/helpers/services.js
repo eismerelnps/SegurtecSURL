@@ -1,7 +1,7 @@
 const services = [
     {
       image: 'fa fa-camera',
-      caption: 'Subministro',
+      caption: 'Suministro',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod dolore deleniti at nostrum id consequuntur nesciunt, adipisci repellat reiciendis quo, esse quibusdam, iste recusandae modi quam temporibus iusto.',
     },
     {
