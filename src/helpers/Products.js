@@ -2,13 +2,14 @@ const Products = [
   {
     id: "",
     category: "",
-    price: "0.00",
+    price: "",
+    offerPrice: "",
     stocked: false,
-    image: `/assets/camera-back.png`,
-    name: "Cámara exterior",
+    inOffer: false,
+    image: "public\assets\products\toner-27-black.jpg",
+    name: "",
     model: '',
-    description:
-      "Cámara de seguridad diseñada para resistir las condiciones climáticas y para monitorear áreas exteriores",
+    description: '',  
   },
   {
     id: "",
