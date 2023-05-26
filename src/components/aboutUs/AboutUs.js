@@ -8,6 +8,8 @@ import { RoadTextSideImage } from "../items/roadTextSideImage/RoadTextSideImage"
 import AboutUsInfo from "../../helpers/AboutUsInfo";
 import Items from "../../helpers/AccordionItemInfo";
 import services from '../../helpers/services'
+import roadMapInfo from "../../helpers/roadMapInfo";
+
 
 const {image} = AboutUsInfo
 
@@ -16,7 +18,7 @@ export const AboutUs = () => {
 
   return (
     <>
-    <RoadTextSideImage Items={services}/>
+    <RoadTextSideImage Items={roadMapInfo}/>
     <SimpleInfoItem Items={AboutUsInfo} ItemTitle='SegurTec' ItemDescription='Acerca de Nosotros'/>
     <Accordion items={Items} />
     </>

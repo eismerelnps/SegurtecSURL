@@ -1,9 +1,30 @@
-.number {
+.road-number {
     width: 50px;
     height: 50px;
 }
 .road-line {
     width: 5px;
-    height: 100%;
+    /* height: 250px; */
 
 }
+.road-container {
+    color: #ff0800;
+}
+/* .item-container {
+   padding-top: 50px;
+} */
+.road-number  {
+    background-color: #e5383b;
+    color: #ffffff;
+}
+.road-caption  {
+    color: #0b090a;
+}
+.road-description {
+    color: #0b090a;
+}
+/* .item-container:hover {
+    background-color: #ffb6b6;
+    font-size: 17px;
+    transition: 500ms;
+} */

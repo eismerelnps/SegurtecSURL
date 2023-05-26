@@ -9,7 +9,7 @@ export const SimpleInfoItem = ({
 }) => {
   return (
     <>
-      <div className="item-header-container container-fluid-xl stiky-top-0 h-5 rounded-xl-5">
+      <div className="item-header-container container-fluid-xl stiky-top-0 h-5 rounded-xl-5 pt-5">
         <section
           className=" item-header container-fluid p-4 bg-danger"
           key={"header"}

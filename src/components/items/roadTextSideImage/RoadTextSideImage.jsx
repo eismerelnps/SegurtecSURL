@@ -6,20 +6,28 @@ export const RoadTextSideImage = ({ Items, image }) => {
   return (
     <Container>
       <Row>
+        <h1 className="road-container text-center p-x-4">
+          Comprometidos con la excelencia
+        </h1>
         <Col md={6}>
-          <h2>Comprometidos con la excelencia</h2>
           <div className="roadmap">
-
-
             {Items.map(({ caption, description }, i) => (
-              <RoadItem number={i+1} caption={caption} description={description} />
+              <RoadItem
+                number={i + 1}
+                caption={caption}
+                description={description}
+              />
             ))}
           </div>
-
-          
         </Col>
         <Col md={6}>
-          <img src="./assets/logo01.png" alt="Imagen" className="img-fluid" />
+          <div className="roadmap-right h-100 p-5">
+            <img
+              className="img-fluid"
+              src="./assets/Photos/camera-01.jpg"
+              alt="Imagen"
+            />
+          </div>
         </Col>
       </Row>
     </Container>

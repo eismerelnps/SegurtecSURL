@@ -8,19 +8,15 @@ export const RoadItem = ({
     description
 }) => {
   return (
-    <div className="elemento-roadmap row">
-        <div className="col-4">
-        <div className="number  circle bg-danger text-light border-light">
-
-        
-        {number}
-        </div>
-        <div className="road-line bg-danger p-4 m-5"></div>
+    <div className="item-container row px-5">
+        <div className="col-4 d-flex flex-column align-items-center">
+        <div className="road-number  circle h1">{number}</div>
+        <div className="road-line bg-danger rounded-5 h-100"></div>
       </div>
 
-      <div className="contenido col-8">
-        <h3 className="">{caption}</h3>
-        <p className="">{description}</p>
+      <div className="contenido col-8 pt-3">
+        <h2 className="item-caption">{caption}</h2>
+        <p className="item-description">{description}</p>
       </div>
     </div>
   );
