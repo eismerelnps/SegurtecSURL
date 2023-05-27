@@ -6,7 +6,7 @@ const Products = [
     offerPrice: "",
     stocked: false,
     inOffer: false,
-    image: "public\assets\products\toner-27-black.jpg",
+    image: "public/assets/products/toner-27-black.jpg",
     name: "",
     model: '',
     description: '',  

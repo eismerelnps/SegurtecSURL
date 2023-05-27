@@ -7,7 +7,9 @@ import { useFetch } from "../../hooks/useFetch";
 export const Aside = () => {
   console.log("Aside again");
 
-  const state = useFetch("https://picsum.photos/200/300.jpg");
+  const url = 'http://localhost:3000/api/v1/products/';
+
+  const state = useFetch( url );
   console.log(state);
 
   const Product = {
@@ -18,6 +20,7 @@ export const Aside = () => {
     width: "auto",
     height: "350px",
     alt: Products.caption,
+    
     onError: () => {
       console.log("Error");
     },
@@ -34,7 +37,7 @@ export const Aside = () => {
 
       <div className="card">
         <h3>Últimos productos</h3>
-        <FilterableProductTable products={Products} />
+        <FilterableProductTable products={state} />
         <products />
       </div>
       <div className="card">

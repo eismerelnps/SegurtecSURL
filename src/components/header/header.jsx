@@ -9,14 +9,16 @@ import { Sidebar } from "./sidebar/sidebar";
 import { useScreen } from "../../hooks/useScreen";
 import { Navbar } from "./navbar/navbar";
 
+
+export let makeX;
 export const Header = () => {
   const isMobile = useScreen();
 
-  function makeX(x) {
-    x.className("change");
-  }
+ makeX = (x) => {
+  x.className("change");
+}
 
-  console.log(JSON.stringify(isMobile));
+  //console.log(JSON.stringify(isMobile));
 
   console.log("Header again");
 
@@ -75,4 +77,5 @@ export const Header = () => {
       </header>
     </div>
   );
+  
 };

@@ -11,7 +11,7 @@ import Items from "../../helpers/AccordionItemInfo";
 import roadMapInfo from "../../helpers/roadMapInfo";
 
 
-const {image} = AboutUsInfo
+// const {image} = AboutUsInfo
 
 export const AboutUs = () => {
   console.log("Abouts again");

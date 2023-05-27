@@ -11,6 +11,8 @@ import ErrorPage from "./components/error-page";
 import { AboutUs } from "./components/aboutUs/AboutUs";
 import { Main } from "./components/index/main";
 import { Services } from "./components/services/Services";
+import { MyModalComponent } from "./components/modal/modal";
+//import
 
 const router = createBrowserRouter([
   {
@@ -32,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ErrorPage />,
+        element: <MyModalComponent />
       },
     ],
   },

@@ -27,7 +27,7 @@ export const ProductTable = ({ products, filterText, inStockOnly }) => {
       rows.push(
         <ProductRow
           product={product}
-          key={product.name} />
+          key={product.id} />
       );
       lastCategory = product.category;
     });

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import "./accordion.css";
 import "animate.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Accordion = ({ items }) => {
   const [activeIndex, setActiveIndex] = useState(null);
