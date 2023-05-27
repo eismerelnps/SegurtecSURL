@@ -5,20 +5,26 @@ import { MyModalComponent } from "../modal/modal";
 import { Services } from "../services/Services";
 import { AboutUs } from "../aboutUs/AboutUs";
 
-import Slideshow from "../SlideShow/Slideshow";
-import Products from "../../helpers/Products";
+// import Slideshow from "../SlideShow/Slideshow";
+// import Products from "../../helpers/Products";
+import { useFetch } from "../../hooks/useFetch";
 
 
 export const Body = () => {
   console.log("Body again");
 
   
+ const handdleFetch = (() => {
+ 
+
+ })
 
 
 
  return (
   
     <div className=" mt-xl-5">
+      <button onClick={handdleFetch} className="btn "> FETCH </button>
       <MyModalComponent />
 
       <div className="card card1 text-center mx-2 my-0">
