@@ -82,7 +82,7 @@ Slideshow.propTypes = {
   slides: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string.isRequired,
-      caption: PropTypes.string.isRequired,
+      caption: PropTypes.string,
       description: PropTypes.string,
       alt: PropTypes.string,
     })

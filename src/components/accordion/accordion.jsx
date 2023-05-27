@@ -17,15 +17,19 @@ export const Accordion = ({ items }) => {
       {items.map(({ caption, description }, index) => (
         <div key={index}>
           <div
-              className={`accordion row d-flex align-items-center p-2 ${
-                activeIndex === index ? "active" : ""
+            className={`accordion row d-flex align-items-center p-2 ${
+              activeIndex === index ? "active" : ""
+            }`}
+            onClick={() => toggleAccordion(index)}
+          >
+            <p className="text-left text-danger fs-2 col-11">{caption}</p>
+            <i
+              className={` col-1 ${
+                activeIndex === index
+                  ? " fa-solid fa-arrow-up fa-bounce fa-xl text-danger"
+                  : "fa-solid fa-arrow-down fa-xl "
               }`}
-              onClick={() => toggleAccordion(index)}
-            >
-              <p className='text-left text-danger fs-2 col-11'>{caption}</p>
-              <i class={` col-1 ${
-                activeIndex === index ? " fa-solid fa-arrow-up fa-bounce fa-xl text-danger" : "fa-solid fa-arrow-down fa-xl "
-              }`}></i>
+            ></i>
           </div>
 
           <div
@@ -35,11 +39,9 @@ export const Accordion = ({ items }) => {
           >
             <p className="text-body fs-3">{description}</p>
           </div>
-          <hr/>
+          <hr />
         </div>
-        
       ))}
-      
     </>
   );
 };

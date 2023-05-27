@@ -121,12 +121,12 @@ const SlideshowADS = ({
         ))}
       </div>
 
-      <a className="prev"  onClick={handlePrevSlide}>
+      <nav className="prev"  onClick={handlePrevSlide}>
         &#10094;
-      </a>
-      <a className="next"  onClick={handleNextSlide}>
+      </nav>
+      <nav className="next"  onClick={handleNextSlide}>
         &#10095;
-      </a>
+      </nav>
     </div>
   );
 };

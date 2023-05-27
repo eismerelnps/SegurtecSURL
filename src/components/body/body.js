@@ -7,7 +7,7 @@ import { AboutUs } from "../aboutUs/AboutUs";
 
 // import Slideshow from "../SlideShow/Slideshow";
 // import Products from "../../helpers/Products";
-import { useFetch } from "../../hooks/useFetch";
+// import { useFetch } from "../../hooks/useFetch";
 
 
 export const Body = () => {

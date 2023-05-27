@@ -25,8 +25,9 @@ export const SimpleInfoItem = ({
       </div>
 
       <div className="row bg-light justify-content-center">
-        {Items.map(({ image, caption, description }) => (
-          <section className="item-section text-center rounded col-10 col-xl-5 p-5 m-3 animate__bounce">
+        {Items.map(({ image, caption, description },i) => (
+          
+          <section key={i} className="item-section text-center rounded col-10 col-xl-5 p-5 m-3 animate__bounce">
             <div className="item-item">
               <div className="item-item-link mb-4 justify-content-center">
                 <i className={`${image} text-center`} aria-hidden="true"></i>

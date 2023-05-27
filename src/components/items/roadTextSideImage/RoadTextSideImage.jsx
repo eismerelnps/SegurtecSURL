@@ -13,6 +13,7 @@ export const RoadTextSideImage = ({ Items, image }) => {
           <div className="roadmap">
             {Items.map(({ caption, description }, i) => (
               <RoadItem
+                key={i}
                 number={i + 1}
                 caption={caption}
                 description={description}

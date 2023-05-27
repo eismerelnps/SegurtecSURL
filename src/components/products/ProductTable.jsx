@@ -37,10 +37,10 @@ export const ProductTable = ({ products, filterText, inStockOnly }) => {
         <thead>
           <tr className="bg-light w-100">
             <th className="w-50 text-center text-danger">Producto</th>
-            <th className="w-5o text-center text-success">Precio</th>
+            <th  className="w-5o text-center text-success">Precio</th>
           </tr>
         </thead>
-        <tbody>{rows}</tbody>
+        <tbody key={products.id}>{rows}</tbody>
       </table>
     );
   }

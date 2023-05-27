@@ -1,19 +1,29 @@
 import { useEffect, useState } from "react";
 
-export const useFetch = (url) => {
+export const useFetch = ( url ) => {
+
     console.log('fetch fetching');
+
   const [state, setState] = useState({
     data: null,
-    loading: 'Cargando los datos',
+    loading: true,
     error: null,
   });
 
   useEffect(() => {
+
+    setState({
+      data: null,
+      loading: true,
+      error: null
+  });
+
     fetch(url)
-      .then((resp) => resp.json())
-      .then((data) => {
+      .then((response) => response.json())
+      .then( data => {
+
         setState({
-          loading: 'false',
+          loading: false,
           error: null,
           data,
         })
