@@ -6,20 +6,11 @@ import { useFetch } from "../../hooks/useFetch";
 
 export const Aside = () => {
   console.log("Aside again");
-
   const url = "http://localhost:3000/api/v1/products/";
 
+  const { loading, data, error } = useFetch({ method: "GET", url });
 
-
-  const state = useFetch(url);
-  console.log(state);
-
-  const { loading, data, error } = state;
-
-
-
-
-
+  console.log(error);
 
   const Product = {
     slides: Products,
@@ -45,20 +36,23 @@ export const Aside = () => {
       <div className="card"></div>
 
       <div className="card">
-        <h3>Últimos productos</h3>
+        <h3 className="text-center">Últimos productos</h3>
         {loading ? (
-          <div className="alert alert-info text-center">Loading..</div>
+          <h4 className="alert alert-info text-center">Cargando productos</h4>
+        ) : error ? (
+          <h4 className="alert alert-danger text-center">Se ha producido un error al cargar los productos</h4>
+        ) : data.length === 0 ? (
+          <h4 className="alert alert-danger text-center">No hay productos disponibles</h4>
         ) : (
           <FilterableProductTable products={data} />
         )}
-
-        <products />
       </div>
+      
       <div className="card">
-        <h3>Siguenos</h3>
+        <h3>Síguenos</h3>
         <p>
           Suministro 🛒, Reparación 🚑, Mantenimientos, sistemas de seguridad
-          📹🚨, equipos de oficina 🖨️🖥️⌨️🖱️💻, redes de datos , entre otros 👍.{" "}
+          📹🚨, equipos de oficina 🖨️🖥️⌨️🖱️💻, redes de datos, entre otros 👍.{" "}
         </p>
       </div>
     </div>

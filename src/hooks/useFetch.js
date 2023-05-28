@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export const useFetch = (url) => {
+export const useFetch = ({ method, url }) => {
   console.log("fetch fetching");
 
   const [state, setState] = useState({
@@ -17,13 +17,13 @@ export const useFetch = (url) => {
     });
 
     fetch(url, {
-      method: "GET",
+      method: method,
     })
       .then((response) => response.json())
       .then((data) => {
         setState({
           loading: false,
-          error: null,
+          error: false,
           data,
         });
       })
@@ -31,7 +31,7 @@ export const useFetch = (url) => {
         console.log(error); // Log any fetch errors
         setState({
           loading: false,
-          error: error.message,
+          error: true,
           data: null,
         });
       });
