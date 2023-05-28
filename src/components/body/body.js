@@ -24,7 +24,6 @@ export const Body = () => {
  return (
   
     <div className=" mt-xl-5">
-      <button onClick={handdleFetch} className="btn "> FETCH </button>
       <MyModalComponent />
 
       <div className="card card1 text-center mx-2 my-0">

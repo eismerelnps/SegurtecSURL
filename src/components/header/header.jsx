@@ -10,13 +10,10 @@ import { useScreen } from "../../hooks/useScreen";
 import { Navbar } from "./navbar/navbar";
 
 
-export let makeX;
+
 export const Header = () => {
   const isMobile = useScreen();
 
- makeX = (x) => {
-  x.className("change");
-}
 
   //console.log(JSON.stringify(isMobile));
 
@@ -30,6 +27,7 @@ export const Header = () => {
           src={`${Slides[1].image}`}
           alt="Company Logo"
         />
+        
 
         <div className="header-overlay">
           <div className="header-content">

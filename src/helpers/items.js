@@ -11,10 +11,10 @@ const items = [
         linkTo: '/services',
         caption: 'Servicios',
     },
-    {
-        linkTo: '/contact',
-        caption: 'Contáctanos',
-    },
+    // {
+    //     linkTo: '/contact',
+    //     caption: 'Contáctanos',
+    // },
   ];
   
   export default items;

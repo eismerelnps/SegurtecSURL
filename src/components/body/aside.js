@@ -7,10 +7,19 @@ import { useFetch } from "../../hooks/useFetch";
 export const Aside = () => {
   console.log("Aside again");
 
-  const url = 'http://localhost:3000/api/v1/products/';
+  const url = "http://localhost:3000/api/v1/products/";
 
-  const state = useFetch( url );
+
+
+  const state = useFetch(url);
   console.log(state);
+
+  const { loading, data, error } = state;
+
+
+
+
+
 
   const Product = {
     slides: Products,
@@ -20,7 +29,7 @@ export const Aside = () => {
     width: "auto",
     height: "350px",
     alt: Products.caption,
-    
+
     onError: () => {
       console.log("Error");
     },
@@ -37,7 +46,12 @@ export const Aside = () => {
 
       <div className="card">
         <h3>Últimos productos</h3>
-        <FilterableProductTable products={state} />
+        {loading ? (
+          <div className="alert alert-info text-center">Loading..</div>
+        ) : (
+          <FilterableProductTable products={data} />
+        )}
+
         <products />
       </div>
       <div className="card">
