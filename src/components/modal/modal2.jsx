@@ -34,7 +34,7 @@ export const Modal2 = ({ isOpen, closeModal }) => {
 
   return (
     <ReactModal className='' isOpen={isOpen} onRequestClose={closeModal}>
-      <div className=" w-100 h-100">
+      <div className="modal-container w-100 h-100">
         <div className="w-100 h-100">
           <div className="modal-content w-100 h-100">
             <div className="modal-header">

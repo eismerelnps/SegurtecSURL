@@ -6,7 +6,7 @@ import { useFetch } from "../../hooks/useFetch";
 
 export const Aside = () => {
   console.log("Aside again");
-  const url = "http://localhost:3000/api/v1/products/";
+  const url = "https://segurtec-backend-production.up.railway.app/api/v1/products/";
 
   const { loading, data, error } = useFetch({ method: "GET", url });
 
